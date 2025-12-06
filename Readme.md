@@ -9,12 +9,12 @@ The application also includes proper error handling for missing resources and ne
 To set up the project, clone the repository using `git clone <your-github-repo-url>`, navigate to the project folder using `cd apiFetcher`, build the project using `mvn clean install`, and run the application using `mvn spring-boot:run`. The application will start at `http://localhost:8080`.
 
 ## Endpoints
-| Endpoint        | Description                               | Query Parameters                  |
-|-----------------|-------------------------------------------|----------------------------------|
-| `/posts`        | List all posts                             | Optional: `userId` to filter    |
-| `/posts/{id}`   | Get details of a single post               | -                                |
-| `/users`        | List all users                             | -                                |
-| `/users/{id}`   | Get details of a single user               | -                                |
+| Endpoint      | Description                 | Query Parameters        |
+|---------------|-----------------------------|-------------------------|
+| `/posts`      | List all posts              | Optional: `userId`      |
+| `/posts/{id}` | Get details of a post       | —                       |
+| `/users`      | List all users              | —                       |
+| `/users/{id}` | Get details of a user       | —                       |
 
 You can filter posts by `userId` using `/posts?userId=1`. 
 
@@ -41,6 +41,7 @@ If a resource is not found (for example, a post or user with a non-existing ID),
 }
 ```
 Similarly, /users can be used to get the list of users or /users/{id} to get details of a single user. The project is built using Java 17, Spring Boot 3.5.8, Lombok, Maven, and the JSONPlaceholder API. It demonstrates proper use of REST APIs, caching, filtering, and error handling.
+
 
 
 
